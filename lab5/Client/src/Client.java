@@ -8,8 +8,8 @@ public class Client {
 	public static void main(String[] args) {
 		
 		try {
-			//InetAddress serveraddress = InetAddress.getByName("localhost");
-			Socket socket = new Socket("127.0.0.1", 9090);
+			
+			Socket socket = new Socket("127.0.0.1", 5000);
 			
 			DataInputStream in = new DataInputStream(socket.getInputStream());
 			DataOutputStream out = new DataOutputStream(socket.getOutputStream());
@@ -25,7 +25,6 @@ public class Client {
 				
 				
 			}
-			System.out.println("you entered 0.Client is closing connection");
 			
 			socket.close();
 			

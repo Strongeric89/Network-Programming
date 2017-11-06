@@ -5,15 +5,20 @@ import java.awt.*;
 
 public class UDPClient extends JFrame 
 {    
+	 
 	public static String stringReceiveData = "";
 	 public UDPClient (){
 	     super( "Client" ); 
-	     JLabel label = new JLabel("FROM SERVER: " + stringReceiveData);
-	     Container container = getContentPane();  
+	     
+	    
+	     JLabel label = new JLabel("FROM SERVER: hello client I am eric the UDPServer" );
+	    	 Container container = getContentPane();  
 	     container.setLayout( new FlowLayout() );
 	     container.add(label);
 	     setSize( 400, 300 );
 	     setVisible( true );	
+
+	    
 	     
 	     try
 	        {
@@ -43,6 +48,8 @@ public class UDPClient extends JFrame
 	        {
 	            System.out.println(e.toString());
 	        }
+	     
+	
 	 }
 	     
 	     

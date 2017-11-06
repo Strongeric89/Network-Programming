@@ -5,3 +5,4 @@
 /Client1.class
 /UDPClient.class
 /UDPServer.class
+/ClientThread$UDPServer.class
